@@ -1,0 +1,52 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+	<link rel='stylesheet' href="../static/font-awesome/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+   <div class="col-lg-12">
+       <h1 class="page-header">Task Trapper</h1>
+   </div>
+
+	<div class="container article-custom">
+
+	  <div class='col-lg-8 col-md-8 col-sm-8 col-xs-8 project-detail-info'>
+	  	<p>Task Trapper is a web app specifically developed for Samsung Galaxt Note. It is being used by a commercial business in Portland, OR. The app keeps track of clocked in employees and what tasks they have completed or need to complete. There is also a manager page that gives users with a special permission to change the settings, tasks, logs, employees and other items. It saves the data using Firebase. The app has been being used since November of 2015</p>       
+	  </div>
+
+	  <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+	  	<h4>Created With:</h4>
+	  	<ul class='tool-list'>
+	  		<li>
+	  			<img src='../static/images/tool_icons/js1_0.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/css-icon.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/HTML5_Logo_256.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/firebase.png'>
+	  		</li>
+	  	</ul>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_icons/TaskTrapper.png'>
+	  </div>
+	 </div>
+   <div class='footer'>&#169 2016 David Flegal
+   </div>
+
+	<script src = "https://code.jquery.com/jquery.js"></script>
+	<script>
+	   $('#home-nav').removeClass('active')
+	   $('#portfolio-nav').removeClass('active')
+	   $('#about-nav').removeClass('active')
+	   $('#contact-nav').removeClass('active')
+	</script>
+
+{% endblock %}

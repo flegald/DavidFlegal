@@ -1,0 +1,67 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+	<link rel='stylesheet' href="../static/font-awesome/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+   <div class="col-lg-12">
+       <h1 class="page-header">Imager</h1>
+   </div>
+
+	<div class="container article-custom">
+
+	  <div class='col-lg-8 col-md-8 col-sm-8 col-xs-8 project-detail-info'>
+	  	<p>This was a project made for Code Fellows 401 Advance Python Course. The site is a profile based user upload service. It uses Django's email service to validate accounts. Photos are stored in an AWS RDS instance. Security was a main focus in this project. SQL Injection and CSRF, among other security issues, were avoided in the proper methods.</p>
+	  	<p><strong>View On:</strong> <a href='https://github.com/flegald/django-imager'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></p>
+	  </div>
+
+	  <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+	  	<h4>Created With:</h4>
+	  	<ul class='tool-list'>
+	  		<li>
+	  			<img src='../static/images/tool_icons/python.ico'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/django.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/AWS.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/ansible_logo_black_square.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/psql_feat1.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/css-icon.png'>
+	  		</li>
+	  	</ul>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/imager/imager1.png'>
+	  </div>
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/imager/imager2.png'>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/imager/imager3.png'>
+	  </div>
+
+	 </div>
+   <div class='footer'>&#169 2016 David Flegal
+   </div>
+
+	<script src = "https://code.jquery.com/jquery.js"></script>
+	<script>
+	   $('#home-nav').removeClass('active')
+	   $('#portfolio-nav').removeClass('active')
+	   $('#about-nav').removeClass('active')
+	   $('#contact-nav').removeClass('active')
+	</script>
+
+{% endblock %}

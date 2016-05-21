@@ -1,0 +1,53 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+<link rel='stylesheet' href="../static/font-awesome/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+   <div class="col-lg-12">
+       <h1 class="page-header">About Me</h1>
+   </div>
+
+   <div class="container article-custom">
+	   <div class='col-lg-8 col-md-8 col-sm-6 col-xs-12'>
+	   <p>I am a dedicated web developer, specializing in Python. I have recently graduated from the Code Fellows 401 Advanced Python course. I enjoy working with frameworks and anything backend. I am able to do front end as well as I have taken multiple courses also at Code Fellows with an emphasis on JavaScript. 
+		</p>
+		<p>
+		I am dedicated to efficiency and organization. I would love to work as a back end developer, using any framework and web service. I am well versed in AWS and Ansible deployment as well as utilizing Gunicorn in tandem with these tools.</p>
+		<ul id='about_contact'>
+			<li>
+				<a href='https://github.com/flegald'>
+					<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li>
+				<a href='https://www.linkedin.com/in/davidflegal'>
+					<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li>
+				<a href='mailto:flegal.david@gmail.com'>
+					<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+				</a>
+			</li>
+			</div>
+
+			<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>
+				<img id='me' src='../static/images/DF.JPG'>
+			</div>
+		</ul>
+	</div>
+	<div class='footer'>&#169 2016 David Flegal
+	</div>
+
+
+<script src = "https://code.jquery.com/jquery.js"></script>
+<script>
+   $('#home-nav').removeClass('active')
+   $('#portfolio-nav').removeClass('active')
+   $('#about-nav').addClass('active')
+   $('#contact-nav').removeClass('active')
+</script>
+{% endblock %}

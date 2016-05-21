@@ -1,0 +1,55 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+	<link rel='stylesheet' href="../static/font-awesome/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+   <div class="col-lg-12">
+       <h1 class="page-header">EchelonJS</h1>
+   </div>
+
+	<div class="container article-custom">
+
+	  <div class='col-lg-8 col-md-8 col-sm-8 col-xs-8 project-detail-info'>
+	  	<p>This is just a little fun game I made while my wife watched Game Of Thrones. It uses the Wordnik API to get a random word for one player interaction. There is extensive user error checking as well as checking to make sure the API chose a valid word. The definition is also pulled from the API and is displayed once the game has ended.</p> 
+	  	<p><strong>View On:</strong> <a href='https://github.com/flegald/games'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>     <a href='http://flegald.github.io/games/'><i class="fa fa-globe fa-3x" aria-hidden="true"></i></a>
+		</p>      
+	  </div>
+
+	  <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+	  	<h4>Created With:</h4>
+	  	<ul class='tool-list'>
+	  		<li>
+	  			<img src='../static/images/tool_icons/js1_0.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/css-icon.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/HTML5_Logo_256.png'>
+	  		</li>
+	  	</ul>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/hangman/hangman1.png'>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/hangman/hangman2.png'>
+	  </div>
+	 </div>
+   <div class='footer'>&#169 2016 David Flegal
+   </div>
+
+	<script src = "https://code.jquery.com/jquery.js"></script>
+	<script>
+	   $('#home-nav').removeClass('active')
+	   $('#portfolio-nav').removeClass('active')
+	   $('#about-nav').removeClass('active')
+	   $('#contact-nav').removeClass('active')
+	</script>
+
+{% endblock %}

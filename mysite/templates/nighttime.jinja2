@@ -1,0 +1,55 @@
+{% extends "base.jinja2" %}
+
+{% block head %}
+	<link rel='stylesheet' href="../static/font-awesome/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+   <div class="col-lg-12">
+       <h1 class="page-header">Night Time</h1>
+   </div>
+
+	<div class="container article-custom">
+
+	  <div class='col-lg-8 col-md-8 col-sm-8 col-xs-8 project-detail-info'>
+	  	<p>This project was made in the course of one night as an entrance test into Code Fellows 401 Course. It is a tool to display weather conditions catered towards sky gazing. It utilizes AJAX calls to the Google Maps API as well as the <a href='https://developer.forecast.io/'>Dark Sky API</a> to gather weather information.</p>
+	  	<p><strong>View On:</strong> <a href='https://github.com/flegald/NightTime'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>     <a href='http://flegald.github.io/NightTime/'><i class="fa fa-globe fa-3x" aria-hidden="true"></i></a>
+		</p>
+	  </div>
+
+	  <div class='col-lg-4 col-md-4 col-sm-4 col-xs-4'>
+	  	<h4>Created With:</h4>
+	  	<ul class='tool-list'>
+	  		<li>
+	  			<img src='../static/images/tool_icons/js1_0.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/html.png'>
+	  		</li>
+	  		<li>
+	  			<img src='../static/images/tool_icons/css-icon.png'>
+	  		</li>
+	  	</ul>
+	  </div>
+
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/NightTime/nighttime1.png'>
+	  </div>
+	  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+	  	<img class='screen_cap' src='../static/images/project_shots/NightTime/nighttime2.png'>
+	  </div>
+
+	 </div>
+   <div class='footer'>&#169 2016 David Flegal
+   </div>
+
+	<script src = "https://code.jquery.com/jquery.js"></script>
+	<script>
+	   $('#home-nav').removeClass('active')
+	   $('#portfolio-nav').removeClass('active')
+	   $('#about-nav').removeClass('active')
+	   $('#contact-nav').removeClass('active')
+	</script>
+
+{% endblock %}

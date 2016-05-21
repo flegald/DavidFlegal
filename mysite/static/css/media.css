@@ -1,0 +1,20 @@
+@media (min-width: 1230px) {
+	body {
+		background-size: cover;
+	}
+}
+
+@media (min-width: 1188px) {
+	.article-custom {
+		margin-top: 331px;
+		background-image: url('../images/gradient.jpg');	
+	}
+}
+
+@media (min-height: 636px) {
+		body {
+		background-size: cover;
+	}
+
+}
+
