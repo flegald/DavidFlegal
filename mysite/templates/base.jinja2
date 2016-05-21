@@ -25,17 +25,38 @@
 
    
    <body>
+
    <div class='container page-top'>
+
+      <div class="mobile-nav">
+         <div class="menu-btn" id="menu-btn">
+            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+         <div class="responsive-menu">
+            <ul>
+            <li class='nav-mobile'><a href="/">Home</a></li>
+            <li class='nav-mobile'><a href="/portfolio">Portfolio</a></li>
+            <li class='nav-mobile'><a href="/about">About</a></li> 
+            <li class='nav-mobile'><a href="/contact">Contact</a></li> 
+            </ul>
+         </div>
+      </div>
+
+
    	<nav class="navbar navbar-default navbar-fixed-top">
    	  <div class="container-fluid">
    	    <div class="navbar-header">
    	      <a class="navbar-brand" href="/"><span class='red'>DF</span></a>
    	    </div>
    	    <ul class="nav navbar-nav">
-   	      <li id='home-nav' class="active"><a href="/">Home</a></li>
-   	      <li id='portfolio-nav'><a href="/portfolio">Portfolio</a></li>
-   	      <li id='about-nav'><a href="/about">About</a></li> 
-   	      <li id='contact-nav'><a href="/contact">Contact</a></li> 
+   	      <li class='-nav' class="active"><a href="/">Home</a></li>
+   	      <li class='-nav'><a href="/portfolio">Portfolio</a></li>
+   	      <li class='-nav'><a href="/about">About</a></li> 
+   	      <li class='-nav'><a href="/contact">Contact</a></li> 
    	    </ul>
    	  </div>
    	</nav>
@@ -48,6 +69,34 @@
       
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src = "js/bootstrap.min.js"></script>
-      
+
+<script type="text/javascript">
+   jQuery(function($){
+      $( '.menu-btn' ).click(function(){
+         $('.responsive-menu').slideToggle()
+      })
+   })
+
+
+   if ($('html').width() <= 700){
+         $('.mobile-nav').show()
+         $('nav').hide()
+   } else {
+         $('.mobile-nav').hide()
+         $('nav').show()
+   } 
+        
+
+   $(window).resize(function(){
+      if ($(window).width() >= 700){   
+         $('nav').show()
+         $('.mobile-nav').hide()
+      } else {
+         $('nav').hide()
+         $('.mobile-nav').show()
+      }
+   });
+</script>
+
    </body>
 </html>
