@@ -94,6 +94,7 @@ body {
 #name {
 	padding-top: 60px;
 	font-size: 3em;
+  z-index: 90;
 }
 
 #arrow {
@@ -241,7 +242,7 @@ i:hover {
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 40px;
   overflow: hidden;
   padding: 0.5em 0;
   background-color: transparent;
