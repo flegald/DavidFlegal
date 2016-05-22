@@ -4,7 +4,7 @@
 	}
 }
 
-@media (min-width: 1188px) {
+@media (min-width: 1200px) {
 	.article-custom {
 		margin-top: 331px;
 		background-image: url('../images/gradient.jpg');	
@@ -16,5 +16,24 @@
 		background-size: cover;
 	}
 
+}
+
+@media (max-width: 800px){
+	.page-header {
+		padding-top: 80px;
+		font-size: 2em;
+	}
+
+	#name {
+		font-size: 2em;
+	}
+
+	.tool-list {
+		margin-left: -15px;
+	}
+
+	.tool-list li img {
+		width: 50px;
+	}
 }
 
